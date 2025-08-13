@@ -418,6 +418,18 @@ img {
   font-weight: var(--font-extrabold);
   color: var(--color-primary);
   text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  height: 45px;
+  width: auto;
+  transition: transform var(--transition-base);
+}
+
+.navbar-brand:hover .navbar-logo {
+  transform: scale(1.05);
 }
 
 .navbar-nav {

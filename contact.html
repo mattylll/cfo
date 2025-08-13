@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact CFO+ for strategic financial services. Book a discovery call or send us a message about your property development or tech company needs.">
+    <meta name="keywords" content="contact CFO+, financial services consultation, book discovery call">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Contact CFO+ | Book Your Discovery Call">
+    <meta property="og:description" content="Get in touch with CFO+ for comprehensive financial solutions tailored to your business needs.">
+    <meta property="og:type" content="website">
+    
+    <title>Contact | CFO+ Financial Services</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="/" class="navbar-brand">
+                <img src="images/cfo-logo.png" alt="CFO+ Logo" class="navbar-logo">
+            </a>
+            
+            <button class="navbar-toggle" id="navbarToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="navbar-nav" id="navbarNav">
+                <li><a href="/" class="navbar-link">Home</a></li>
+                <li><a href="services.html" class="navbar-link">Services</a></li>
+                <li><a href="industries/property.html" class="navbar-link">Property</a></li>
+                <li><a href="industries/tech.html" class="navbar-link">Tech</a></li>
+                <li><a href="about.html" class="navbar-link">About</a></li>
+                <li><a href="resources.html" class="navbar-link">Resources</a></li>
+                <li><a href="contact.html" class="btn btn-accent">Book Discovery Call</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="section bg-surface">
+        <div class="container">
+            <h1 class="section-title fade-in">Let's Start Your Financial Transformation</h1>
+            <p class="section-subtitle slide-up">Book a complimentary discovery call or send us a message to explore how CFO+ can accelerate your growth</p>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-cols-2" style="gap: var(--space-4xl);">
+                <!-- Contact Form -->
+                <div class="fade-in">
+                    <h2 style="color: var(--color-primary); margin-bottom: var(--space-xl);">Get in Touch</h2>
+                    
+                    <form id="contactForm" class="contact-form">
+                        <div class="grid grid-cols-2" style="gap: var(--space-lg);">
+                            <div class="form-group">
+                                <label for="firstName" class="form-label">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" class="form-input" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="lastName" class="form-label">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" class="form-input" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address *</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="form-input">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company" class="form-label">Company Name *</label>
+                            <input type="text" id="company" name="company" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="industry" class="form-label">Industry *</label>
+                            <select id="industry" name="industry" class="form-select" required>
+                                <option value="">Select your industry</option>
+                                <option value="property-development">Property Development</option>
+                                <option value="property-investment">Property Investment</option>
+                                <option value="tech-saas">Technology / SaaS</option>
+                                <option value="ecommerce">E-commerce</option>
+                                <option value="professional-services">Professional Services</option>
+                                <option value="manufacturing">Manufacturing</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="stage" class="form-label">Current Stage *</label>
+                            <select id="stage" name="stage" class="form-select" required>
+                                <option value="">Select your stage</option>
+                                <optgroup label="Property Development">
+                                    <option value="land-acquisition">Land Acquisition Phase</option>
+                                    <option value="planning">Planning Stage</option>
+                                    <option value="active-development">Active Development</option>
+                                    <option value="multiple-projects">Multiple Projects</option>
+                                </optgroup>
+                                <optgroup label="Business Stage">
+                                    <option value="pre-seed">Pre-seed / Idea Stage</option>
+                                    <option value="seed">Seed Stage</option>
+                                    <option value="series-a">Series A</option>
+                                    <option value="series-b">Series B+</option>
+                                    <option value="established">Established SME</option>
+                                    <option value="scale-up">Scale-up Phase</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Services Needed * (select all that apply)</label>
+                            <div class="grid grid-cols-2" style="gap: var(--space-md); margin-top: var(--space-sm);">
+                                <label style="display: flex; align-items: center;">
+                                    <input type="checkbox" name="services" value="cfo-advisory" class="form-checkbox">
+                                    <span>CFO Advisory</span>
+                                </label>
+                                <label style="display: flex; align-items: center;">
+                                    <input type="checkbox" name="services" value="ssas-pension" class="form-checkbox">
+                                    <span>SSAS Pension Setup/Review</span>
+                                </label>
+                                <label style="display: flex; align-items: center;">
+                                    <input type="checkbox" name="services" value="development-finance" class="form-checkbox">
+                                    <span>Development Finance</span>
+                                </label>
+                                <label style="display: flex; align-items: center;">
+                                    <input type="checkbox" name="services" value="property-structuring" class="form-checkbox">
+                                    <span>Property Structuring</span>
+                                </label>
+                                <label style="display: flex; align-items: center;">
+                                    <input type="checkbox" name="services" value="tax-planning" class="form-checkbox">
+                                    <span>Tax Planning</span>
+                                </label>
+                                <label style="display: flex; align-items: center;">
+                                    <input type="checkbox" name="services" value="tax-compliance" class="form-checkbox">
+                                    <span>Tax Compliance</span>
+                                </label>
+                                <label style="display: flex; align-items: center;">
+                                    <input type="checkbox" name="services" value="bookkeeping" class="form-checkbox">
+                                    <span>Bookkeeping</span>
+                                </label>
+                                <label style="display: flex; align-items: center;">
+                                    <input type="checkbox" name="services" value="management-accounts" class="form-checkbox">
+                                    <span>Management Accounts</span>
+                                </label>
+                                <label style="display: flex; align-items: center;">
+                                    <input type="checkbox" name="services" value="fundraising" class="form-checkbox">
+                                    <span>Fundraising Support</span>
+                                </label>
+                                <label style="display: flex; align-items: center;">
+                                    <input type="checkbox" name="services" value="not-sure" class="form-checkbox">
+                                    <span>Not Sure - Need Guidance</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">Specific Needs (optional)</label>
+                            <div class="grid grid-cols-2" style="gap: var(--space-md); margin-top: var(--space-sm);">
+                                <label style="display: flex; align-items: center;">
+                                    <input type="checkbox" name="specific" value="spv-setup" class="form-checkbox">
+                                    <span>Setting up SPV/Holding Company</span>
+                                </label>
+                                <label style="display: flex; align-items: center;">
+                                    <input type="checkbox" name="specific" value="raising-finance" class="form-checkbox">
+                                    <span>Raising development finance</span>
+                                </label>
+                                <label style="display: flex; align-items: center;">
+                                    <input type="checkbox" name="specific" value="ssas-property" class="form-checkbox">
+                                    <span>SSAS for property purchase</span>
+                                </label>
+                                <label style="display: flex; align-items: center;">
+                                    <input type="checkbox" name="specific" value="planning-gain" class="form-checkbox">
+                                    <span>Planning gain tax optimization</span>
+                                </label>
+                                <label style="display: flex; align-items: center;">
+                                    <input type="checkbox" name="specific" value="investor-pack" class="form-checkbox">
+                                    <span>Need investor pack/models</span>
+                                </label>
+                                <label style="display: flex; align-items: center;">
+                                    <input type="checkbox" name="specific" value="behind-bookkeeping" class="form-checkbox">
+                                    <span>Behind on bookkeeping</span>
+                                </label>
+                                <label style="display: flex; align-items: center;">
+                                    <input type="checkbox" name="specific" value="audit-prep" class="form-checkbox">
+                                    <span>Preparing for audit</span>
+                                </label>
+                                <label style="display: flex; align-items: center;">
+                                    <input type="checkbox" name="specific" value="international" class="form-checkbox">
+                                    <span>International expansion</span>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="projectValue" class="form-label">Project/Deal Value (optional)</label>
+                            <select id="projectValue" name="projectValue" class="form-select">
+                                <option value="">Select range</option>
+                                <option value="under-500k">Under £500k</option>
+                                <option value="500k-1m">£500k - £1M</option>
+                                <option value="1m-5m">£1M - £5M</option>
+                                <option value="5m-10m">£5M - £10M</option>
+                                <option value="10m-25m">£10M - £25M</option>
+                                <option value="over-25m">Over £25M</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" class="form-textarea" rows="5" placeholder="Tell us about your business and how we can help..."></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="meetingType" class="form-label">Preferred Meeting Type</label>
+                            <select id="meetingType" name="meetingType" class="form-select">
+                                <option value="discovery-30">Discovery Call (30 min)</option>
+                                <option value="consultation-60">Full Consultation (60 min)</option>
+                                <option value="in-person">In-Person Meeting</option>
+                            </select>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-accent btn-lg" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+                
+                <!-- Contact Information -->
+                <div class="scale-in">
+                    <div class="card card-glass" style="padding: var(--space-2xl); margin-bottom: var(--space-xl);">
+                        <h3 class="card-title">Direct Contact</h3>
+                        
+                        <div style="margin: var(--space-xl) 0;">
+                            <div style="display: flex; align-items: center; margin-bottom: var(--space-lg);">
+                                <div class="service-icon" style="width: 40px; height: 40px; margin-right: var(--space-md);">📧</div>
+                                <div>
+                                    <div style="font-weight: var(--font-semibold);">Email</div>
+                                    <a href="mailto:john@cfoplus.co.uk" class="text-accent">john@cfoplus.co.uk</a>
+                                </div>
+                            </div>
+                            
+                            <div style="display: flex; align-items: center; margin-bottom: var(--space-lg);">
+                                <div class="service-icon" style="width: 40px; height: 40px; margin-right: var(--space-md);">📱</div>
+                                <div>
+                                    <div style="font-weight: var(--font-semibold);">Phone</div>
+                                    <a href="tel:+442012345678" class="text-accent">020 1234 5678</a>
+                                </div>
+                            </div>
+                            
+                            <div style="display: flex; align-items: center; margin-bottom: var(--space-lg);">
+                                <div class="service-icon" style="width: 40px; height: 40px; margin-right: var(--space-md);">💼</div>
+                                <div>
+                                    <div style="font-weight: var(--font-semibold);">LinkedIn</div>
+                                    <a href="https://linkedin.com/in/johnlamond" class="text-accent" target="_blank">Connect on LinkedIn</a>
+                                </div>
+                            </div>
+                            
+                            <div style="display: flex; align-items: center;">
+                                <div class="service-icon" style="width: 40px; height: 40px; margin-right: var(--space-md);">📍</div>
+                                <div>
+                                    <div style="font-weight: var(--font-semibold);">Location</div>
+                                    <span class="text-light">London, UK</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card" style="padding: var(--space-2xl); margin-bottom: var(--space-xl);">
+                        <h3 class="card-title">Book a Call Directly</h3>
+                        <p class="card-description">Prefer to schedule directly? Use our online booking system to find a time that works for you.</p>
+                        <a href="#" class="btn btn-primary mt-lg" style="width: 100%;">Open Calendar</a>
+                    </div>
+                    
+                    <div class="card" style="padding: var(--space-2xl);">
+                        <h3 class="card-title">What Happens Next?</h3>
+                        <ol style="margin-top: var(--space-lg); padding-left: var(--space-lg);">
+                            <li style="margin-bottom: var(--space-md); color: var(--color-text-light);">
+                                <strong style="color: var(--color-text);">Acknowledgment</strong><br>
+                                We'll respond within 24 hours to confirm receipt
+                            </li>
+                            <li style="margin-bottom: var(--space-md); color: var(--color-text-light);">
+                                <strong style="color: var(--color-text);">Discovery Call</strong><br>
+                                30-minute call to understand your needs
+                            </li>
+                            <li style="margin-bottom: var(--space-md); color: var(--color-text-light);">
+                                <strong style="color: var(--color-text);">Tailored Proposal</strong><br>
+                                Custom solution designed for your business
+                            </li>
+                            <li style="color: var(--color-text-light);">
+                                <strong style="color: var(--color-text);">Partnership Begins</strong><br>
+                                Start your financial transformation journey
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section bg-surface">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            
+            <div class="grid grid-cols-2" style="gap: var(--space-xl); margin-top: var(--space-3xl);">
+                <div class="card">
+                    <h4 style="color: var(--color-primary); margin-bottom: var(--space-md);">What is a discovery call?</h4>
+                    <p class="text-light">A complimentary 30-minute consultation where we discuss your business, understand your challenges, and explore how CFO+ can help you achieve your goals.</p>
+                </div>
+                
+                <div class="card">
+                    <h4 style="color: var(--color-primary); margin-bottom: var(--space-md);">Do you work with startups?</h4>
+                    <p class="text-light">Yes! We work with businesses at all stages, from pre-seed startups to established enterprises. Our services scale with your needs.</p>
+                </div>
+                
+                <div class="card">
+                    <h4 style="color: var(--color-primary); margin-bottom: var(--space-md);">What areas do you cover?</h4>
+                    <p class="text-light">We work with clients across the UK and internationally. Most consultations can be conducted virtually, with in-person meetings available in London.</p>
+                </div>
+                
+                <div class="card">
+                    <h4 style="color: var(--color-primary); margin-bottom: var(--space-md);">How quickly can we start?</h4>
+                    <p class="text-light">Following our discovery call and agreement on scope, we can typically begin work within 48 hours for urgent matters, or schedule a start date that suits you.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About CFO+</h4>
+                    <p>Comprehensive financial services for property developers and tech companies. FCA-compliant expertise that scales with your ambition.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html#cfo">CFO Advisory</a></li>
+                        <li><a href="services.html#property">Property Finance</a></li>
+                        <li><a href="services.html#ssas">SSAS Pensions</a></li>
+                        <li><a href="services.html#tax">Tax Planning</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>📧 john@cfoplus.co.uk</p>
+                    <p>📱 020 1234 5678</p>
+                    <p>📍 London, UK</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 CFO+ Financial Services. All rights reserved. | FCA Regulated</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
